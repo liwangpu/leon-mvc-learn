@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "订单流水按区域提取";
+    Layout = "~/Views/Shared/_MetadataUpload.cshtml";
+}
+
+@section scripts{
+    <script>
+
+        require(["dojo/ready", "dijit/registry"], function (ready, registry) {
+            ready(function () {
+                var wbtnDataProcessing = registry.byId("btnDataProcessing");
+                wbtnDataProcessing.on("click", processingMetadata);
+            });//ready
+
+
+            function processingMetadata() {
+                var wuploadBox = registry.byId("uploadBox");
+                var data = wuploadBox.getValues();
+
+                console.log(1, data);
+            }//processingMetadata
+
+        });//require
+    </script>
+}
+
+@section uploadbox{
+
+    <form data-dojo-type="dijit/form/Form" id="uploadBox">
+        <div class="form-item">
+            <label for="orderRecord">订单流水</label>
+            <input type="file" id="orderRecord" accept=".xlsx" />
+        </div>
+
+
+        <button data-dojo-type="dijit/form/Button" id="btnDataProcessing">数据处理</button>
+    </form>
+}
+
+
+@section description{
+    <h5>订单流水按区域切分功能说明:</h5>
+}
+
