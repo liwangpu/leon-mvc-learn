@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YiPin", "YiPin", "{B0CB7772-732D-44AF-A676-30E75F30AE61}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YiPin", "YiPin\YiPin.csproj", "{F613D65B-D4C8-4F0F-B9C8-050D04F2CB80}"
 EndProject
 Global
@@ -19,7 +21,10 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F613D65B-D4C8-4F0F-B9C8-050D04F2CB80} = {B0CB7772-732D-44AF-A676-30E75F30AE61}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9FB10341-2680-449B-8373-2B3297C3275B}
+		SolutionGuid = {769042E9-B8C1-4F15-9532-593A30AAFDC8}
 	EndGlobalSection
 EndGlobal
